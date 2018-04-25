@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Погода</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron" style="margin-bottom: 0px; color: white; background-color: #4aa1f3;">
+	<h2 class="text-center" style="font-size: 50px; font-weight: 600;">Weather+</h2>
+</div>
+
+<div id="conteiner">
+
+	<div class="row">
+		<h3 class="text-center text-primary" style="margin: auto; margin-bottom: 20px;"> Введіть назву міста</h3>
+		<span id="error"></span>
+	</div>
+
+    <div class="row form-group form-inline" id="rowDiv">
+
+    	<input type="text" name="city" id="city" class="form-control" placeholder="Назва міста">
+    	<button id="submitWeather" class="btn btn-primary">Пошук</button>	
+    </div>
+
+    <div id="show"></div>
+
+</div>
+
+<footer><p style="color:white">&copy; Прогноз погоди для тих, хто в пивниці ;)</p></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
